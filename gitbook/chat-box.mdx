@@ -1,0 +1,42 @@
+---
+title: 'Chat Box'
+description: 'The chat box configures how your AI conversations work.'
+icon: 'message-square'
+prompt: |-
+  Fetched and converted content from https://k9p5.gitbook.io/diffusionstudio/welcome-to-diffusion-studio-pro/chat-box.md
+  Keep images and gifs as external URLs. Create MDX page with original markdown content.
+---
+
+# Chat Box
+
+<figure><img src="https://1998737141-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FkZmAMkk6kBVPNceQRurL%2Fuploads%2FIAdXJO7daTPx9Iu1zGCi%2Fprompt_box.gif?alt=media&token=d312c7ee-f033-42d0-b708-4f2ab600335e" alt=""/><figcaption></figcaption></figure>
+
+Here’s a high-level overview of the options:
+
+- **Reasoning**: When enabled, the agent will create a step-by-step task list before acting on your request. After each step, it will decide what to do next. Recommended for complex, multi-step tasks. For simple tasks like generating an image, it’s faster to keep this off.
+- **Tool configuration**: The agent has access to 16+ tools. Here you can choose which tools it’s allowed to use.
+- **Aspect ratio**: Sets the aspect ratio for generated images and videos. Not all aspect ratios work with every tool — if your chosen one isn’t supported, the closest available option will be used. Set to `Auto` to let the system decide based on your prompt or chat context.
+- **Video duration**: Sets the length of generated videos. If your requested length isn’t supported, it will use the nearest available option.
+- **Audio**: When enabled, generated videos will include audio. This takes slightly longer than generating without audio.
+
+### Optimizing prompts
+
+Within the Tool configuration, you’ll also find a switch for `Prompt Optimization` 
+
+<figure><img src="https://1998737141-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FkZmAMkk6kBVPNceQRurL%2Fuploads%2FjSKEpQ1r2SVvYawQMfPB%2Fprompt_optimization.gif?alt=media&token=fa06ea0c-24ca-4157-b69f-043a0d08d356" alt=""/><figcaption></figcaption></figure>
+
+When enabled, the agent uses an LLM to restructure your prompts so they work best with each tool. In other words, it automatically applies best practices for prompt writing.
+
+> _Tip:_ For high-fidelity prompting and precise prompt engineering, keep this disabled so your exact wording is preserved.
+
+### Defining tool the access
+
+At the bottom of the same dropdown, you’ll see `Configure agent`.
+
+<figure><img src="https://1998737141-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FkZmAMkk6kBVPNceQRurL%2Fuploads%2FRlv9thOBSzFKBB57Zk9t%2Fconfigure_agent.gif?alt=media&token=b0260e23-57f7-42f1-a684-2bf172de2f3c" alt=""/><figcaption></figcaption></figure>
+
+The agent can access multiple models for the each tool. E.g. the tool "Text to image" might use `Flux.1 Kontext Max` or `GPT Image 1` . Click on a model to select it, **double click to make it your primary selection**
+
+> There’s no single “best” model — it depends on your style preferences, desired output speed, and budget. As a research company, we continuously monitor the generative space and make state-of-the-art models available whenever possible.
+
+_Experiment with these settings to find the combination that works best for your workflow._
