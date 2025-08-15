@@ -1,47 +1,47 @@
 {
-  "logo": {
-    "dark": "/logo/light.svg",
-    "light": "/logo/dark.svg"
-  },
-  "name": "fumabase-starter",
-  "footer": {
-    "links": [
-      {
-        "items": [
-          {
-            "href": "https://fumabase.com",
-            "label": "Fumabase"
-          }
+    "logo": {
+        "dark": "/logo/light.svg",
+        "light": "/logo/dark.svg"
+    },
+    "name": "fumabase-starter",
+    "footer": {
+        "links": [
+            {
+                "items": [
+                    {
+                        "href": "https://fumabase.com",
+                        "label": "Fumabase"
+                    }
+                ],
+                "header": "Documentation"
+            }
         ],
-        "header": "Documentation"
-      }
+        "socials": {
+            "github": "https://github.com/remorses",
+            "twitter": "https://x.com/__morse"
+        }
+    },
+    "navbar": {
+        "links": [
+            {
+                "href": "https://fumabase.com",
+                "icon": "document",
+                "label": "Home"
+            }
+        ],
+        "primary": {
+            "href": "https://fumabase.com/login",
+            "type": "button",
+            "label": "Get Started"
+        }
+    },
+    "siteId": "01K2PXD8WB09G6VC494W8FDSAB",
+    "$schema": "https://fumabase.com/fumabase.json",
+    "domains": [
+        "morse-pjq4g5wc.fumabase.com"
     ],
-    "socials": {
-      "github": "https://github.com/remorses",
-      "twitter": "https://x.com/__morse"
+    "favicon": {
+        "dark": "/favicon.svg",
+        "light": "/favicon.svg"
     }
-  },
-  "navbar": {
-    "links": [
-      {
-        "href": "https://fumabase.com",
-        "icon": "document",
-        "label": "Home"
-      }
-    ],
-    "primary": {
-      "href": "https://fumabase.com/login",
-      "type": "button",
-      "label": "Get Started"
-    }
-  },
-  "siteId": "01K2PXD8WB09G6VC494W8FDSAB",
-  "$schema": "https://fumabase.com/fumabase.json",
-  "domains": [
-    "morse-pjq4g5wc.fumabase.com"
-  ],
-  "favicon": {
-    "dark": "/favicon.svg",
-    "light": "/favicon.svg"
-  }
 }
